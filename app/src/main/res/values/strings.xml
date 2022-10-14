@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Android_Assigment_2</string>
+    <string name="mult">×</string>
+    <string name="div">÷</string>
+    <string name="sub">-</string>
+    <string name="add">+</string>
+</resources>

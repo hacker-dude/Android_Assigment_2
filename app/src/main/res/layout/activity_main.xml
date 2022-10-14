@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink_grey"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="100dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/et2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="100dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/et1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="#6B5F6E"
+        android:gravity="center"
+        android:text="@string/add"
+        android:textColor="@color/white"
+        android:textSize="75sp"
+        app:layout_constraintLeft_toLeftOf="@id/et1"
+        app:layout_constraintRight_toRightOf="@id/et1"
+        app:layout_constraintTop_toBottomOf="@id/et1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/subtract"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/dark_purple"
+        android:gravity="center"
+        android:text="@string/sub"
+        android:textColor="@color/white"
+        android:textSize="75sp"
+        app:layout_constraintLeft_toLeftOf="@id/et2"
+        app:layout_constraintRight_toRightOf="@id/et2"
+        app:layout_constraintTop_toBottomOf="@id/et2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/multiply"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="#6B5F6E"
+        android:gravity="center"
+        android:text="@string/mult"
+        android:textColor="@color/white"
+        android:textSize="75sp"
+        app:layout_constraintLeft_toLeftOf="@id/add"
+        app:layout_constraintRight_toRightOf="@id/add"
+        app:layout_constraintTop_toBottomOf="@id/add" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/divide"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="#6B5F6E"
+        android:gravity="center"
+        android:text="@string/div"
+        android:textColor="@color/white"
+        android:textSize="75sp"
+        app:layout_constraintLeft_toLeftOf="@id/subtract"
+        app:layout_constraintRight_toRightOf="@id/subtract"
+        app:layout_constraintTop_toBottomOf="@id/subtract" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
